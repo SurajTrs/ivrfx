@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       ></div>
 
       {/* Content */}
-      <div className="container py-4 position-relative" style={{ zIndex: 2 }}>
+      <div className="container py-3 position-relative" style={{ zIndex: 2 }}>
         <div className="row align-items-center">
           {/* Left Text Section */}
           <div className="col-md-6">

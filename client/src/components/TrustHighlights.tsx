@@ -22,19 +22,19 @@ export default function TrustHighlights() {
       title: "Transparent pricing",
       desc:
         "Highly competitive market conditions such as low trading fees and tight spreads starting from 0.0, with leverage options up to 1:500.",
-      img: { src: "/window.svg", alt: "Pricing dashboard" },
+      img: { src: "/images/gan-t-hero.png", alt: "Pricing dashboard" },
     },
     {
       title: "170+ countries across the world",
       desc:
         "Our products and services have a global outreach, covering several regions and continents around the globe.",
-      img: { src: "/globe.svg", alt: "Global reach" },
+      img: { src: "/images/trading-illustration.png", alt: "Global reach" },
     },
     {
       title: "Multilingual customer support 24/5",
       desc:
         "Get assistance when you need it. Our team supports multiple languages to help you trade with confidence.",
-      img: { src: "/file.svg", alt: "Support channels" },
+      img: { src: "/images/trading-illustration1.png", alt: "Support channels" },
     },
     {
       title: "Secured assets & funds",
