@@ -17,7 +17,7 @@ const cards: Card[] = [
   },
   {
     title: "TradingView",
-    subtitle: "Unleash the power of TradingView with Markets.com",
+    subtitle: "Unleash the power of TradingView with IVRFX",
     href: "#",
     image: "/images/bg-pattern.jpg",
   },

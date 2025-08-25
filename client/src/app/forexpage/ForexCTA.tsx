@@ -21,7 +21,7 @@ export default function ForexCTA() {
       />
       <div className="container position-relative">
         <Reveal>
-          <div className="p-5 rounded-4 border bg-white shadow-sm">
+          <div className="p-5 rounded-4 border bg-white shadow-sm mb-5">
             <div className="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
               <div>
                 <div className="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill bg-success bg-opacity-10 text-success small mb-2">

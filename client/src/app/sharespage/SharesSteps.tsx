@@ -44,7 +44,7 @@ export default function SharesSteps() {
               <span className="rounded-circle bg-success" style={{ width: 6, height: 6 }} />
               Get started in 3 steps
             </div>
-            <h2 className="h1 m-0">Join markets.com in minutes</h2>
+            <h2 className="h1 m-0">Join ivrfx in minutes</h2>
           </Reveal>
         </div>
         <div className="row g-4">

@@ -9,9 +9,9 @@ import IndicesFAQs from "app/indicespage/IndicesFAQs";
 import IndicesCTA from "app/indicespage/IndicesCTA";
 
 export const metadata = {
-  title: "Trade Indices CFDs | Markets.com",
+  title: "Trade Indices CFDs | IVRFX",
   description:
-    "Trade the world’s biggest stock markets with tight spreads, fast execution and powerful tools.",
+    "Trade the world’s top indices with tight spreads, leverage, and real-time market insights on a secure platform.",
 };
 
 export default function IndicesPage() {

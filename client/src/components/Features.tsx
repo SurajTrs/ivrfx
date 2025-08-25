@@ -22,7 +22,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <div className="features-section">
+    <div className="features-section bg-black">
       <div className="container py-5">
         <div className="row g-4">
           {features.map((feature, index) => (

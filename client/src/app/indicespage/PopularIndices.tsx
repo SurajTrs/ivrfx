@@ -5,7 +5,7 @@ import { popularIndices } from "app/indicespage/data";
 
 export default function PopularIndices() {
   return (
-    <section id="popular" className="py-6 position-relative" aria-label="Popular indices">
+    <section id="popular" className="py-6 position-relative mt-5" aria-label="Popular indices">
       <div
         className="position-absolute rounded-circle"
         style={{

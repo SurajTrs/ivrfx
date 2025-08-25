@@ -18,7 +18,7 @@ export default function TrustFooter() {
         {/* Top area */}
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="footer-logo">markets<span className="brand-dot">●</span>com</div>
+            <div className="footer-logo">ivrfx<span className="brand-dot">●</span>com</div>
             <div className="footer-stores">
               <a className="store-btn gp" href="#" aria-label="Get it on Google Play">Google Play</a>
               <a className="store-btn as" href="#" aria-label="Download on the App Store">App Store</a>
@@ -27,7 +27,7 @@ export default function TrustFooter() {
             </div>
             <div className="footer-contact">
               <div className="fc-h">Contact us</div>
-              <a href="mailto:support@markets.com" className="fc-link">support@markets.com</a>
+              <a href="mailto:support@ivrfx.com" className="fc-link">support@ivrfx.com</a>
               <a href="tel:+12845680155" className="fc-link">+1 284 568 0155</a>
             </div>
             <div className="footer-social">

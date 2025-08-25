@@ -97,7 +97,7 @@ const TradingInstruments: React.FC = () => {
           <img src="/images/gan-t-hero.png" alt="Google, Amazon, Netflix, Tesla coins" />
         </div>
 
-        <h2 className="ti-heading text-center mb-4">Markets.com trading instruments</h2>
+        <h2 className="ti-heading text-center mb-4">IVRFX trading instruments</h2>
 
         <div className="ti-grid">
           {categories.map((c) => (

@@ -5,7 +5,7 @@ import Reveal from "components/Reveal";
 const ForexHero: React.FC = () => {
   return (
     <section
-      className="py-6 py-lg-7 position-relative overflow-hidden"
+      className="py-6 py-lg-7 position-relative overflow-hidden mb-5"
       style={{
         backgroundImage: "url(/images/bg-pattern1.jpg)",
         backgroundSize: "cover",

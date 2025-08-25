@@ -1,12 +1,13 @@
 "use client";
 import ForexHero from 'app/forexpage/ForexHero';
 import WhyTradeForex from 'app/forexpage/WhyTradeForex';
-import ForexBenefits from 'app/forexpage/ForexBenefits';
+import CurrencyPairsZigzag from 'app/forexpage/CurrencyPairsZigzag';
 import PopularForex from 'app/forexpage/PopularForex';
 import ForexMarketSnapshot from 'app/forexpage/ForexMarketSnapshot';
 import JoinSteps from 'app/forexpage/JoinSteps';
 import ForexFAQs from 'app/forexpage/ForexFAQs';
 import ForexCTA from 'app/forexpage/ForexCTA';
+import ForexWhyUs from 'app/forexpage/ForexWhyUs';
 
 export default function Page() {
   return (
@@ -15,7 +16,8 @@ export default function Page() {
         <ForexHero />
       </div>
       <WhyTradeForex />
-      <ForexBenefits />
+      <ForexWhyUs />
+      <CurrencyPairsZigzag />
       <PopularForex />
       <ForexMarketSnapshot />
       <JoinSteps />

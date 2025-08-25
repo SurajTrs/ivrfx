@@ -5,7 +5,7 @@ import { popularForex } from "app/forexpage/data";
 
 export default function PopularForex() {
   return (
-    <section className="py-6 position-relative" aria-label="Popular forex pairs">
+    <section className="py-6 position-relative mt-5" aria-label="Popular forex pairs">
       {/* Ambient glow */}
       <div
         className="position-absolute rounded-circle"

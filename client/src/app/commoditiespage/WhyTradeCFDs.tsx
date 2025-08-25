@@ -4,12 +4,12 @@ import Reveal from "components/Reveal";
 
 export default function WhyTradeCFDs() {
   return (
-    <section className="py-6" aria-label="Why trade commodity CFDs with markets.com">
+    <section className="py-6" aria-label="Why trade commodity CFDs with ivrfx">
       <div className="container">
         <div className="row align-items-center g-4 g-lg-5 mb-5">
           <div className="col-12 col-lg-6">
             <Reveal>
-              <h2 className="display-6 mb-3 text-dark fw-bold">Why trade commodity CFDs with markets.com</h2>
+              <h2 className="display-6 mb-3 text-dark fw-bold">Why trade commodity CFDs with ivrfx</h2>
             </Reveal>
             <Reveal delay={0.1}>
               <ul className="list-unstyled m-0 d-grid gap-2">

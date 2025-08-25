@@ -30,7 +30,7 @@ export default function IndicesSteps() {
                 color: "transparent",
               }}
             >
-              Join markets.com in minutes
+              Join ivrfx in minutes
             </h2>
           </Reveal>
         </div>

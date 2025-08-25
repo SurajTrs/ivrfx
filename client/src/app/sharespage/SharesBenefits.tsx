@@ -54,7 +54,7 @@ export default function SharesBenefits() {
                 <span className="rounded-circle bg-success" style={{ width: 6, height: 6 }} />
                 Benefits
               </div>
-              <h2 className="h1 m-0">Trade smarter with Markets.com</h2>
+              <h2 className="display-6 mb-3 text-dark fw-bold">Trade smarter with IVRFX</h2>
             </div>
           </Reveal>
         </div>

@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
         <a className="navbar-brand" href="/">
           <img 
             src="/images/logo.jpg" 
-            alt="Markets.com Logo" 
+            alt="IVRFX Logo" 
             height="80" 
             className="d-inline-block align-text-top"
           />
@@ -187,9 +187,9 @@ const Navbar: React.FC = () => {
                     <li><a className="dropdown-item" href="/markets/shares">Shares</a></li>
                     <li><a className="dropdown-item" href="/markets/commodities">Commodities</a></li>
                     <li><a className="dropdown-item" href="/markets/indices">Indices</a></li>
-                    <li><a className="dropdown-item" href="#">Crypto</a></li>
-                    <li><a className="dropdown-item" href="#">ETFs</a></li>
-                    <li><a className="dropdown-item" href="#">Bonds</a></li>
+                    <li><a className="dropdown-item" href="/markets/crypto">Crypto</a></li>
+                    <li><a className="dropdown-item" href="/markets/etfs">ETFs</a></li>
+                    <li><a className="dropdown-item" href="/markets/bonds">Bonds</a></li>
                   </ul>
                 </li>
               </ul>
@@ -209,7 +209,7 @@ const Navbar: React.FC = () => {
                 <li className="mega-col">
                   <h6 className="dropdown-header">Trading Platforms</h6>
                   <ul className="list-unstyled m-0">
-                    <li><a className="dropdown-item" href="#">Web Platform</a></li>
+                    <li><a className="dropdown-item" href="/trading/web-platform">Web Platform</a></li>
                     <li><a className="dropdown-item" href="#">App</a></li>
                     <li><a className="dropdown-item" href="#">TradingView</a></li>
                     <li><a className="dropdown-item" href="#">MT4</a></li>
@@ -311,8 +311,8 @@ const Navbar: React.FC = () => {
                 <li className="mega-col">
                   <h6 className="dropdown-header">Company</h6>
                   <ul className="list-unstyled m-0">
-                    <li><a className="dropdown-item" href="#">About Markets.com</a></li>
-                    <li><a className="dropdown-item" href="#">Why markets.com</a></li>
+                    <li><a className="dropdown-item" href="#">About IVRFX</a></li>
+                    <li><a className="dropdown-item" href="#">Why IVRFX</a></li>
                     <li><a className="dropdown-item" href="#">Global Offering</a></li>
                     <li><a className="dropdown-item" href="#">Our Group</a></li>
                     <li><a className="dropdown-item" href="#">Career</a></li>

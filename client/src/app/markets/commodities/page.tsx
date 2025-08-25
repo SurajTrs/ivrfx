@@ -9,7 +9,7 @@ import CommoditiesFAQs from "app/commoditiespage/CommoditiesFAQs";
 import React from "react";
 
 export const metadata = {
-  title: "Trade Commodities CFDs | Markets.com",
+  title: "Trade Commodities CFDs | IVRFX",
   description:
     "Speculate on commodities driving the global economy. Trade CFDs on energies, metals, and softs with tight spreads, insights, and powerful tools.",
 };

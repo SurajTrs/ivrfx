@@ -181,3 +181,8 @@
   @media (min-width: 992px) {
     .py-lg-6 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
   }
+
+  /* ===== Features section ===== */
+  .features-section { color: #fff; }
+  .features-section .feature-card h5 { color: #fff; }
+  .features-section .feature-card p { color: #fff; }

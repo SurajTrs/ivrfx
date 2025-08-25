@@ -5,7 +5,7 @@ import { popularIndices } from "app/indicespage/data";
 
 export default function MarketSnapshot() {
   return (
-    <section id="snapshot" className="py-6" aria-label="Indices market snapshot">
+    <section id="snapshot" className="py-6 mt-5" aria-label="Indices market snapshot">
       <div className="container">
         <div className="d-flex align-items-end justify-content-between mb-4">
           <Reveal>

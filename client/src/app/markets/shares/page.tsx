@@ -9,9 +9,9 @@ import SharesFAQs from "app/sharespage/SharesFAQs";
 import React from "react";
 
 export const metadata = {
-  title: "Trade Shares CFDs | Markets.com",
+  title: "Trade Shares CFDs | IVRFX",
   description:
-    "Trade global shares with tight spreads, market insights, and powerful tools. Explore popular shares, live snapshots, expert analysis, and get started today.",
+    "Access a wide range of global shares. Trade CFDs with competitive spreads and robust tools designed for every trader.",
 };
 
 export default function Sharespage() {

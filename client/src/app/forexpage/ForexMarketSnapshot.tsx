@@ -5,7 +5,7 @@ import { popularForex } from "app/forexpage/data";
 
 export default function ForexMarketSnapshot() {
   return (
-    <section className="py-6" aria-label="Forex market snapshot">
+    <section className="py-6 mt-5" aria-label="Forex market snapshot">
       <div className="container">
         <div className="d-flex align-items-end justify-content-between mb-3">
           <Reveal>
