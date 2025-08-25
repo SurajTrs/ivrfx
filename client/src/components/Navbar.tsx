@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   useEffect(() => {
@@ -350,8 +351,8 @@ const Navbar: React.FC = () => {
             <option>EN</option>
             <option>FR</option>
           </select>
-          <button className="btn btn-outline-light btn-sm px-3">Login</button>
-          <button className="btn btn-success btn-sm px-3">Sign Up</button>
+          <Link href="/auth/login" className="btn btn-outline-light btn-sm px-3">Login</Link>
+          <Link href="/auth/register" className="btn btn-success btn-sm px-3">Sign Up</Link>
         </div>
       </div>
     </nav>
