@@ -1045,6 +1045,20 @@
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
+/* ===== Global Section Spacing Utilities ===== */
+.page-section { padding: 5rem 0; }
+@media (min-width: 992px) { /* lg+ */
+  .page-section { padding: 6.5rem 0; }
+}
+@media (max-width: 576px) { /* sm */
+  .page-section { padding: 3.5rem 0; }
+}
+.page-section-tight { padding: 3rem 0; }
+.page-section-loose { padding: 7.5rem 0; }
+@media (min-width: 992px) {
+  .page-section-loose { padding: 9rem 0; }
+}
+
 /* ===== Footer Disclaimer ===== */
 .footer-legal-wrap { background: #0f1220; color: #c8ccdb; padding: 24px 16px 40px; }
 .footer-legal-wrap .footer-inner { max-width: 1200px; margin: 0 auto; }

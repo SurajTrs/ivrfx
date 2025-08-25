@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react';
 
 const Navbar: React.FC = () => {
@@ -23,7 +24,11 @@ const Navbar: React.FC = () => {
         const menu = item.querySelector<HTMLUListElement>('.dropdown-menu');
         if (!toggle || !menu) return;
 
-        const onEnter = () => {
+        // debounce close timer per item
+        let closeTimer: number | null = null;
+
+        const openNow = () => {
+          if (closeTimer) { window.clearTimeout(closeTimer); closeTimer = null; }
           closeAll();
           item.classList.add('show');
           menu.classList.add('show');
@@ -49,7 +54,8 @@ const Navbar: React.FC = () => {
             }
           }
         };
-        const onLeave = () => {
+
+        const closeNow = () => {
           item.classList.remove('show');
           menu.classList.remove('show');
           toggle.setAttribute('aria-expanded', 'false');
@@ -60,6 +66,18 @@ const Navbar: React.FC = () => {
             (menu as HTMLElement).style.transform = '';
           }
         };
+
+        const scheduleClose = () => {
+          if (closeTimer) { window.clearTimeout(closeTimer); }
+          closeTimer = window.setTimeout(() => { closeNow(); closeTimer = null; }, 180);
+        };
+
+        const cancelClose = () => {
+          if (closeTimer) { window.clearTimeout(closeTimer); closeTimer = null; }
+        };
+
+        const onEnter = () => { openNow(); };
+        const onLeave = () => { scheduleClose(); };
         const onToggleClick = (ev: Event) => {
           // Prevent Bootstrap click toggle on desktop; hover controls state
           if (window.innerWidth >= lgBreakpoint) {
@@ -70,10 +88,13 @@ const Navbar: React.FC = () => {
 
         item.addEventListener('mouseenter', onEnter);
         item.addEventListener('mouseleave', onLeave);
+        // keep open while hovering menu; cancel scheduled close
+        menu.addEventListener('mouseenter', cancelClose);
+        menu.addEventListener('mouseleave', onLeave);
         toggle.addEventListener('click', onToggleClick, true);
 
         // Store listeners for cleanup
-        (item as any)._hoverHandlers = { onEnter, onLeave, onToggleClick };
+        (item as any)._hoverHandlers = { onEnter, onLeave, onToggleClick, cancelClose };
       });
 
       onDocClick = (e: MouseEvent) => {
@@ -119,18 +140,17 @@ const Navbar: React.FC = () => {
     };
   }, []);
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-black shadow-sm py-3">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black shadow-sm py-3 sticky-top">
       <div className="container">
         {/* Brand */}
-        <a className="navbar-brand" href="#">
-  <img 
-    src="/images/logo.jpg" 
-    alt="Markets.com Logo" 
-    height="80" 
-    className="d-inline-block align-text-top"
-  />
-</a>
-
+        <a className="navbar-brand" href="/">
+          <img 
+            src="/images/logo.jpg" 
+            alt="Markets.com Logo" 
+            height="80" 
+            className="d-inline-block align-text-top"
+          />
+        </a>
 
         {/* Toggler (Mobile Menu Button) */}
         <button
@@ -163,10 +183,10 @@ const Navbar: React.FC = () => {
                 <li className="mega-col">
                   <h6 className="dropdown-header">Products</h6>
                   <ul className="list-unstyled m-0">
-                    <li><a className="dropdown-item" href="#">Forex</a></li>
-                    <li><a className="dropdown-item" href="#">Shares</a></li>
-                    <li><a className="dropdown-item" href="#">Commodities</a></li>
-                    <li><a className="dropdown-item" href="#">Indices</a></li>
+                    <li><a className="dropdown-item" href="/markets/forex">Forex</a></li>
+                    <li><a className="dropdown-item" href="/markets/shares">Shares</a></li>
+                    <li><a className="dropdown-item" href="/markets/commodities">Commodities</a></li>
+                    <li><a className="dropdown-item" href="/markets/indices">Indices</a></li>
                     <li><a className="dropdown-item" href="#">Crypto</a></li>
                     <li><a className="dropdown-item" href="#">ETFs</a></li>
                     <li><a className="dropdown-item" href="#">Bonds</a></li>
