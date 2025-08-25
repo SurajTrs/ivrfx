@@ -3,6 +3,11 @@
   width: 100%;
   padding: 56px 16px 72px;
   color: #000;
+  position: relative; /* ensure its children don't overlap next section */
+  overflow: hidden;   /* clip any decorative elements */
+  z-index: 0; /* keep below previous section if edges touch */
+  background: #fff; /* ensure a solid white backdrop */
+  margin-top: 24px; /* add separation from previous section */
 }
 .offers-wrap .title { color: #000; }
 .offers-actions { display: flex; justify-content: center; margin-top: 28px; }
@@ -454,13 +459,17 @@
 }
 
 @media (max-width: 600px) {
-  .offers-wrap { padding: 36px 12px 48px; }
+  .offers-wrap { padding: 36px 12px 76px; margin-top: 24px; } /* extra space to avoid overlap */
   .title { font-size: 24px; }
   .headline { font-size: 22px; }
   .subhead { font-size: 14px; }
   .hero-card { padding: 18px; }
   .phone { width: 190px; height: 320px; }
   .hero-card::before { opacity: 0.28; }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .offers-wrap { margin-top: 22px; }
 }
 .features-section {
   background-color: #000;
@@ -504,10 +513,23 @@
   min-height: auto;
 }
 
+/* Ensure hovered platform cards appear above following section if close */
+.platform-card-wrap { position: relative; }
+.platform-card-wrap:hover { z-index: 2; }
+
+/* Platforms section wrapper adjustments */
+.platforms-section { position: relative; z-index: 2; overflow: hidden; padding-bottom: 12px; margin-bottom: 12px; background: #fff; }
+@media (max-width: 992px) {
+  .platforms-section { padding-bottom: 22px; margin-bottom: 20px; }
+}
+@media (max-width: 768px) {
+  .platforms-section { margin-top: 8px; padding-bottom: 28px; margin-bottom: 24px; }
+}
+
 @media (max-width: 992px) {
   .platforms-grid {
     grid-template-columns: repeat(2, 1fr);
-    height: 55vh;
+    height: auto; /* grow naturally to avoid overlap */
   }
 }
 
